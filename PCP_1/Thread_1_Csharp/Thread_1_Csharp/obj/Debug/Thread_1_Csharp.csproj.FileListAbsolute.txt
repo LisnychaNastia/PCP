@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.exe.config
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.exe
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.pdb
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.exe
+C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.pdb
