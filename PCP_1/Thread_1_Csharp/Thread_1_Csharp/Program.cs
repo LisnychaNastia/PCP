@@ -16,13 +16,14 @@ namespace Thread_1_Csharp
 
         void Start()
         {
-            BreakThread breakThread = new BreakThread();
-            new Thread(new MainThread(1, 2, breakThread).Calculator).Start();
-            new Thread(new MainThread(2, 3, breakThread).Calculator).Start();
-            new Thread(new MainThread(3, 4, breakThread).Calculator).Start();
+            Console.Write("Enter ur number of Threads: ");
+            int count = int.Parse(Console.ReadLine());
 
-            Thread thread1 = new Thread(new MainThread(4, 5, breakThread).Calculator);
-            thread1.Start();
+            BreakThread breakThread = new BreakThread();
+            for (int i = 0; i < count; i++)
+			{
+                new Thread(new MainThread(i, i + 2, breakThread).Calculator).Start();
+			}
             new Thread(breakThread.Stopper).Start();
             Console.ReadLine();
         }

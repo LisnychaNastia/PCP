@@ -6,3 +6,11 @@ C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Cs
 C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.exe
 C:\Users\user\source\repos\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.pdb
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.exe.config
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.exe
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\bin\Debug\Thread_1_Csharp.pdb
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.AssemblyReference.cache
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.SuggestedBindingRedirects.cache
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.csproj.CoreCompileInputs.cache
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.exe
+D:\PCP\PCP_1\Thread_1_Csharp\Thread_1_Csharp\obj\Debug\Thread_1_Csharp.pdb
