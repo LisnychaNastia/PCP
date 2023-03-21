@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 3" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>D:\Gnat\bin\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project >D:\Gnat\bin\thread_1_ada.gpr</vfs_project>
+      <vfs_file >D:\Gnat\bin\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 3">
+      <vfs_project >D:\Gnat\bin\thread_1_ada.gpr</vfs_project>
+      <vfs_file >D:\Gnat\bin\main.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 2">
+      <vfs_project  />
+      <vfs_file >D:\Gnat\bin\thread_1_ada.gpr</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >D:\Gnat\bin\thread_1_ada.gpr</vfs_project>
+      <vfs_file >D:\Gnat\bin\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
