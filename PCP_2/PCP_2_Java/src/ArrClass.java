@@ -37,6 +37,7 @@ public class ArrClass {
             }
         }
         return globalMin;
+
     }
 
     synchronized public void incThreadCount(){
@@ -55,8 +56,10 @@ public class ArrClass {
         Random r = new Random();
         int[] arr = new int[dim];
         for(int i = 0; i < dim; i++){
-            arr[i] = r.nextInt(-20,20);
+            arr[i] = r.nextInt(0,20);
         }
+        int r_index = r.nextInt(0, dim - 1);
+        arr[r_index] = -1;
         return arr;
     }
 
@@ -71,6 +74,15 @@ public class ArrClass {
         threadMin[threadNum - 1] = new ThreadMin((threadNum - 1) * step, dim - 1, this);
         new Thread(threadMin[threadNum - 1]).start();
         return getMin();
+    }
+    public int index_min(int min)
+    {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == min){
+                return i;
+            }
+        }
+        return -1;
     }
 
     public void print(){
