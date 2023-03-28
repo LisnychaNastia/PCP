@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +19,13 @@ namespace PCP_2_Csharp
             Program main = new Program();
             main.InitArr();
             main.Print();
-            Console.WriteLine(main.PartMin(0, dim));
 
-            Console.WriteLine(main.ParallelMin());
+            long min = main.ParallelMin();
+            Console.WriteLine("Мiнiмальним елементом серед масиву є: " + min);
+            Console.WriteLine("Iндекс мiнiмального числа: " + main.IndexMin((int)min));
             Console.ReadKey();
         }
-
+       
         private void Print()
         {
             foreach (var item in arr)
@@ -64,8 +65,22 @@ namespace PCP_2_Csharp
             Random r = new Random();
             for (int i = 0; i < dim; i++)
             {
-                arr[i] = r.Next(-20, 20);
+                arr[i] = r.Next(0, 20);
             }
+            arr[r.Next(0, dim - 1)] = -1;
+
+        }
+
+        private int IndexMin(int min)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == min)
+                {
+                    return i;
+                }
+            }
+            return -1;
         }
 
         class Bound
