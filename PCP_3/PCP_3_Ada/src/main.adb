@@ -8,64 +8,69 @@ procedure Main is
    package String_Lists is new Indefinite_Doubly_Linked_Lists (String);
    use String_Lists;
 
-   procedure FC(size, amountElems: Integer) is
-      storage: List;
+   procedure Starter (Storage_Size : in Integer; GItem_Numbers : in Integer) is
+      Storage : List;
 
-      storage_access: Counting_Semaphore(1, Default_Ceiling);
-      storage_not_full : Counting_Semaphore(size, Default_Ceiling);
-      storage_not_empty : Counting_Semaphore(0, Default_Ceiling);
+      Access_Storage : Counting_Semaphore (1, Default_Ceiling);
+      Full_Storage   : Counting_Semaphore (Storage_Size, Default_Ceiling);
+      Empty_Storage  : Counting_Semaphore (0, Default_Ceiling);
 
-      task type fabricator is
-         entry start(id1: Integer);
-      end fabricator;
+      task type Producer(Item_Numbers : Integer);
 
-      task type consumer is
-         entry start(id1: Integer);
-      end consumer;
+      task type Consumer(Item_Numbers : Integer);
 
-      task body fabricator is
-         id: Integer := 0;
-         begin
-         accept start(id1: Integer) do
-            id := id1;
-         end start;
-         for i in 1..amountElems loop
-            storage_not_full.Seize;
-            storage_access.Seize;
+      task body Producer is
+      begin
 
+         for i in 1 .. Producer.Item_Numbers loop
+            Full_Storage.Seize;
+            Access_Storage.Seize;
 
-            storage_not_empty.Release;
-            storage_access.Release;
-            delay 1.0;
+            Storage.Append ("item " & i'Img);
+            Put_Line ("Added item " & i'Img);
+
+            Access_Storage.Release;
+            Empty_Storage.Release;
+            delay 0.1;
          end loop;
-      end fabricator;
 
-      task body consumer is
-         id: Integer := 0;
-         begin
-         accept start(id1: Integer) do
-            id := id1;
-         end start;
-         for i in 1..amountElems loop
-            storage_not_empty.Seize;
-            storage_access.Seize;
-            storage.Delete_First;
+      end Producer;
 
-            storage_not_full.Release;
-            storage_access.Release;
-            delay 1.0;
+      task body Consumer is
+      begin
+
+         for i in 1 .. Consumer.Item_Numbers loop
+            Empty_Storage.Seize;
+            Access_Storage.Seize;
+
+            declare
+               item : String := First_Element (Storage);
+            begin
+               Put_Line ("Took " & item);
+            end;
+
+            Storage.Delete_First;
+
+            Access_Storage.Release;
+            Full_Storage.Release;
+
+            delay 0.2;
          end loop;
-      end consumer;
 
-      fabricators: array(1..5) of fabricator;
-      consumers: array(1..5) of consumer;
+      end Consumer;
+
+	t1: Consumer (GItem_Numbers);
+	t2: Consumer (GItem_Numbers);
+	t3: Consumer (GItem_Numbers);
+	t4: Producer (GItem_Numbers);
+	t5: Producer (GItem_Numbers);
+	t6: Producer (GItem_Numbers);
 
    begin
-      for i in 1..5 loop
-         fabricators(i).start(id1 => i);
-         consumers(i).start(id1 => i);
-      end loop;
-   end FC;
+      null;
+   end Starter;
+
 begin
-   FC(3, 5);
+   Starter (4, 20);
+   null;
 end Main;
